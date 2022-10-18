@@ -1,0 +1,264 @@
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    /* width: 100%; */
+    min-height: 100vh;
+}
+
+.flexC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexSb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.hd-left ul{
+    display: flex;
+    margin-right: 5vw;
+}
+.hd-left li{
+    margin: 0 15px 0 15px;
+    color: #777;
+    font-weight: 700;
+    font-size: 1.8vw;
+    font-family: Open Sans;
+    cursor: pointer;
+}
+
+.banner{}
+
+.banner img{
+    width: 100%;
+}
+
+
+
+/* encontre seu estilo */
+.section-title{
+    margin: 6vw 0 6vw 0;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: max(16px, 3.5vw);
+}
+.section-title img{
+    /* max-width: 55vw; */
+}
+#img-left{
+    max-width: 30vw;
+}
+#img-right{
+    max-width: 50vw;
+}
+
+.banner-cards{
+    width: 90%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "card-left card-right";
+    /* gap: 1vw; */
+    margin: 6vw 0 0 0;
+    /* padding: 18px 0px 18px 0px; */
+}
+
+.banner-card-left{
+    grid-area: card-left;
+    padding: 18px 0px 18px 0px;
+}
+
+.banner-card-right{
+    grid-area: card-right;
+    padding: 18px 0px 18px 0px;
+}
+
+
+
+
+/* midNav */
+.midNav{
+    background: #C2185B;
+    padding: 50px 0 90px 0;
+}
+
+.midNav-title{
+    text-align: center;
+    color: white;
+    font-family: Open Sans;
+    font-style: bold;
+    font-size: max(16px, 2vw);
+    padding: 0px 0 50px 0;
+    /* background-color: red; */
+}
+
+.midNav-Cards{
+    /* background-color: red; */
+    gap: 15px;
+    padding: 0 12vw 0 12vw;
+}
+
+.midNav-Card{
+    min-height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 6px 0 6px;
+    padding: 0 0 15px 0;
+
+}
+.midNav-Card img{
+    margin: 0 0 12px 0;
+}
+.midNav-Card span{
+    font-family: Open Sans;
+    padding: 0 12px 0 12px ;
+}
+
+
+
+
+
+
+
+/* bottom */
+.bottom{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin: 15vw 12vw 15vw 12vw;
+}
+
+.bottom-left{
+    /* background-color: tomato; */
+    padding: 0 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bottom-left img{
+    padding: 0 8px 0 0px;
+}
+
+.bottom-right{
+    /* background-color: tomato; */
+    padding: 0 0 0 8px;
+}
+.bottom-right img{
+    padding: 0 0 0 8px;
+}
+
+.bD-title{
+    grid-area: bD-title;
+    /* background-color: blue; */
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 1.8vw;
+}
+
+.bD-Card{
+    width: 73%;
+    text-align: center;
+    /* background-color: orange; */
+    font-size: 2.5vw;
+    font-family: Open Sans;
+    color: white;
+    line-height: 6vw;
+    margin: 0 0 3vw 0;
+}
+
+.bDCard-content{
+    background-color: #C2185B;
+}
+
+.bD-imgRight{
+    grid-area: bd-imgRight;
+    /* background-color: goldenrod; */
+}
+
+.bD-imgLeft{
+    grid-area: bd-imgLeft;
+    /* background-color: green; */
+}
+
+
+
+
+
+/* footer */
+footer{
+    background-color: #C2185B;
+    display: flex;
+    /* padding: 0 15vw 0 15vw; */
+    align-items: center;
+    color: white;
+    padding: 3vw 0 2vw 2vw;
+    justify-content: space-evenly;
+}
+
+.footer-left{
+    padding-bottom: 5vw;
+    margin-right: auto;
+    margin-left: 8vw;
+}
+
+.footer-logo{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 18vw;
+    margin-right: 15vw;
+}
+.footer-logo img{
+    /* background-color: red; */
+}
+
+.footer-content{
+    color: white;
+    font-family: Open Sans;
+    font-size: 1.2vw;
+    max-width: 20vw;
+    font-weight: 300;
+}
+
+.footer-bloco2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 18vw;
+}
+
+.footer-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 6vw;
+    margin-right: 15vw;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 14vw;
+    font-size: 1.4vw;
+    font-weight: 100;
+    line-height: 1.3;
+}
+
